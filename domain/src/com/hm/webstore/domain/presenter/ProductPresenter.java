@@ -1,4 +1,6 @@
-package com.hm.webstore.domain.entity;
+package com.hm.webstore.domain.presenter;
+
+import com.hm.webstore.domain.entity.Product;
 
 import java.util.List;
 

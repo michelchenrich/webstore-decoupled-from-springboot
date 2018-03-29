@@ -1,9 +1,9 @@
 package com.hm.webstore.delivery.controller;
 
-import com.hm.webstore.domain.entity.ProductGateway;
-import com.hm.webstore.domain.entity.ProductOperations;
-import com.hm.webstore.domain.entity.ProductPresenter;
-import com.hm.webstore.domain.entity.StorageUnitGateway;
+import com.hm.webstore.domain.gateway.ProductGateway;
+import com.hm.webstore.domain.actions.ProductActions;
+import com.hm.webstore.domain.presenter.ProductPresenter;
+import com.hm.webstore.domain.gateway.StorageUnitGateway;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping(consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE,
                 produces = MediaType.APPLICATION_JSON_VALUE)
-public class ProductController extends ProductOperations {
+public class ProductController extends ProductActions {
     @Autowired
     public ProductController(ProductPresenter presenter,
                              ProductGateway gateway,

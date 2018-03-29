@@ -4,7 +4,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.hm.webstore.domain.entity.Product;
-import com.hm.webstore.domain.entity.ProductPresenter;
+import com.hm.webstore.domain.presenter.ProductPresenter;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

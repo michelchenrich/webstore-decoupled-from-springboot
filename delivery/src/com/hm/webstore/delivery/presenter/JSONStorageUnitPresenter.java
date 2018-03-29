@@ -2,7 +2,7 @@ package com.hm.webstore.delivery.presenter;
 
 import com.google.gson.JsonObject;
 import com.hm.webstore.domain.entity.StorageUnit;
-import com.hm.webstore.domain.entity.StorageUnitPresenter;
+import com.hm.webstore.domain.presenter.StorageUnitPresenter;
 import org.springframework.stereotype.Component;
 
 @Component

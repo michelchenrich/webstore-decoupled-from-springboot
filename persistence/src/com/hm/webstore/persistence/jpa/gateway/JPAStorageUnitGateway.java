@@ -1,7 +1,7 @@
-package com.hm.webstore.persistence.jpa;
+package com.hm.webstore.persistence.jpa.gateway;
 
 import com.hm.webstore.domain.entity.StorageUnit;
-import com.hm.webstore.domain.entity.StorageUnitGateway;
+import com.hm.webstore.domain.gateway.StorageUnitGateway;
 import com.hm.webstore.persistence.jpa.entity.JPAStorageUnit;
 import com.hm.webstore.persistence.jpa.repository.JPAStorageUnitRepository;
 import org.springframework.beans.factory.annotation.Autowired;

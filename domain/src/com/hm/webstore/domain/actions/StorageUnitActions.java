@@ -1,15 +1,15 @@
-package com.hm.webstore.delivery;
+package com.hm.webstore.domain.actions;
 
 import com.hm.webstore.domain.entity.StorageUnit;
-import com.hm.webstore.domain.entity.StorageUnitGateway;
-import com.hm.webstore.domain.entity.StorageUnitPresenter;
+import com.hm.webstore.domain.gateway.StorageUnitGateway;
+import com.hm.webstore.domain.presenter.StorageUnitPresenter;
 
-public class StorageUnitOperations {
+public class StorageUnitActions {
     private StorageUnitPresenter presenter;
     private StorageUnitGateway gateway;
     
-    public StorageUnitOperations(StorageUnitPresenter presenter,
-                                 StorageUnitGateway gateway) {
+    public StorageUnitActions(StorageUnitPresenter presenter,
+                              StorageUnitGateway gateway) {
         this.presenter = presenter;
         this.gateway = gateway;
     }

@@ -1,7 +1,7 @@
-package com.hm.webstore.persistence.jpa;
+package com.hm.webstore.persistence.jpa.gateway;
 
 import com.hm.webstore.domain.entity.Product;
-import com.hm.webstore.domain.entity.ProductGateway;
+import com.hm.webstore.domain.gateway.ProductGateway;
 import com.hm.webstore.persistence.jpa.entity.JPAProduct;
 import com.hm.webstore.persistence.jpa.repository.JPAProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;

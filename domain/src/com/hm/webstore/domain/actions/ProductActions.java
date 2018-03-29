@@ -1,13 +1,20 @@
-package com.hm.webstore.domain.entity;
+package com.hm.webstore.domain.actions;
 
-public class ProductOperations {
+import com.hm.webstore.domain.entity.Money;
+import com.hm.webstore.domain.entity.Product;
+import com.hm.webstore.domain.entity.StorageUnit;
+import com.hm.webstore.domain.gateway.ProductGateway;
+import com.hm.webstore.domain.gateway.StorageUnitGateway;
+import com.hm.webstore.domain.presenter.ProductPresenter;
+
+public class ProductActions {
     private ProductPresenter presenter;
     private ProductGateway gateway;
     private StorageUnitGateway storageUnitGateway;
     
-    public ProductOperations(ProductPresenter presenter,
-                             ProductGateway gateway,
-                             StorageUnitGateway storageUnitGateway) {
+    public ProductActions(ProductPresenter presenter,
+                          ProductGateway gateway,
+                          StorageUnitGateway storageUnitGateway) {
         this.presenter = presenter;
         this.gateway = gateway;
         this.storageUnitGateway = storageUnitGateway;
